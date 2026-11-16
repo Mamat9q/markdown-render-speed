@@ -146,3 +146,16 @@ reaching 10x would need the index-scanner rewrite explored in
 earlier trials (`trials/index-scanner-v7`, not shipped), which is
 not a safe change in the remaining time. Numbers are logged per
 variant in `trials/trials.jsonl`.
+
+## Repair round (16–17 Nov 2026, resubmit underway)
+
+Fresh-seed fixes (lazy blockquote code-merge, HTML-block trailing
+newline in loose lists, www/scheme autolink vs emphasis delimiters,
+table rows indented 4+, lazy lines after fence-like lines, task items
+starting with `<!--`, raw inline `<pre>`/`<code>`/`<kbd>`/`<script>`
+text) were rewritten line-by-line in this session for the resubmit
+recording after the first entry was rejected on
+`transcripts_witnessed` only. Re-verified in this session: 720/720
+practice, 2000/2000 expanded corpus, fresh seeds A/B/C 712/717/711
+of 720; bench (9 interleaved rounds, 720 cases) median 548.9 ms vs
+marked 744.3 ms, 1.36x.
